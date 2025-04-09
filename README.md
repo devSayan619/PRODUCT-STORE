@@ -15,65 +15,74 @@ A full-stack web application for managing product inventory with CRUD operations
 ## Tech Stack
 
 ### Frontend
+
 - **React** with Vite for fast development
 - **Chakra UI** for a modern, accessible component library
 - **React Router** for page navigation
 - **Zustand** for global state management
 
 ### Backend
+
 - **Express.js** for the API server
 - **MongoDB** with Mongoose for data storage
 - **RESTful API** architecture
 
 ## API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET    | /api/products | Retrieve all products |
-| POST   | /api/products | Create a new product |
+| Method | Endpoint          | Description            |
+| ------ | ----------------- | ---------------------- |
+| GET    | /api/products     | Retrieve all products  |
+| POST   | /api/products     | Create a new product   |
 | PUT    | /api/products/:id | Update a product by ID |
 | DELETE | /api/products/:id | Delete a product by ID |
 
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v14 or higher)
 - MongoDB (local or Atlas connection)
 
 ### Installation
 
 1. Clone the repository
+
    ```bash
-   git clone https://github.com/yourusername/product-store.git
+   git clone https://github.com/devSayan619/PRODUCT-STORE.git
    cd product-store
    ```
 
 2. Set up the backend
+
    ```bash
    cd backend
    npm install
    ```
 
 3. Create a `.env` file in the backend directory with the following:
+
    ```
    MONGO_URI=your_mongodb_connection_string
    PORT=6969
    ```
 
 4. Set up the frontend
+
    ```bash
    cd ../frontend
    npm install
    ```
 
 5. Run the application
-   
+
    In the backend directory:
+
    ```bash
    npm run dev
    ```
-   
+
    In the frontend directory:
+
    ```bash
    npm run dev
    ```
